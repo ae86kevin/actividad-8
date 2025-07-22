@@ -28,6 +28,19 @@ def contadordeletras(palabra, letra):
 
 
 
+
+
+def potencia(base, expoente):
+    if expoente == 0:
+        return 1
+    else:
+        return base * potencia(base, expoente-1)
+
+
+
+
+
+
 opcion = ""
 while opcion != "0":
     print("\n seleccione una opcion")
@@ -48,4 +61,21 @@ while opcion != "0":
     elif opcion == "2":
         n=int(input("ingrese numero: "))
         print(f"\nla suma del numero es {sumar(n)}")
+
+
+
+    elif opcion == "3":
+        n=int(input("ingrese numero: "))
+        print(f"el fibonacci es {fibonacci(n)}")
+
+
+    elif opcion == "6":
+        base=int(input("ingrese numero: "))
+        expoente=int(input("ingrese numero: "))
+        print(f"la potencia es {potencia(base, expoente)}")
+
+
+
+
+
 

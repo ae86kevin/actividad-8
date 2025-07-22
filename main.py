@@ -19,4 +19,33 @@ def fibonacci(n):
 
 
 def contadordeletras(palabra, letra):
+    if palabra == "":
+        return 0
+    else:
+        return palabra.count(letra)
+
+
+
+
+
+opcion = ""
+while opcion != "0":
+    print("\n seleccione una opcion")
+    print("1. calcular la factorial de un numero")
+    print("2. suma de los primero N numeros naturales")
+    print("3. calcular N-esimo numero de fibonacci")
+    print("4. contar cuantas veces aparece una letra")
+    print("5. invertir una cadena de texto")
+    print("6. calcular la potencia")
+    print("0. salir del programa")
+    opcion = input()
+
+
+    if opcion == "1":
+        n=int(input("ingrese numero: "))
+        print(f"\nla factorial del numero es {factoria(n)}")
+
+    elif opcion == "2":
+        n=int(input("ingrese numero: "))
+        print(f"\nla suma del numero es {sumar(n)}")
 

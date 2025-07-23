@@ -25,6 +25,22 @@ def contadordeletras(palabra, letra):
         return palabra.count(letra)
 
 
+def invertircadena(texto):
+    if texto == "":
+        return 0
+    else:
+        return texto[::-1]
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -67,6 +83,15 @@ while opcion != "0":
     elif opcion == "3":
         n=int(input("ingrese numero: "))
         print(f"el fibonacci es {fibonacci(n)}")
+
+
+    elif opcion == "5":
+        texto=input("ingrese texto: ")
+        print(f"\nEl texto invertido es: {invertircadena(texto)}")
+
+
+
+
 
 
     elif opcion == "6":

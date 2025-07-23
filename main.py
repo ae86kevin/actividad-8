@@ -12,15 +12,21 @@ def sumar(n):
         return n+sumar(n-1)
 
 def fibonacci(n):
-    if n <= 1:
-        return n
+    if n <= 0:
+        return 0
+
+    elif n == 1:
+        return 1
+
     else:
         return fibonacci(n-1) + fibonacci(n-2)
 
 
+
 def contadordeletras(palabra, letra):
-    if palabra == "":
+    if palabra =="":
         return 0
+
     else:
         return palabra.count(letra)
 
@@ -30,17 +36,6 @@ def invertircadena(texto):
         return 0
     else:
         return texto[::-1]
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -84,6 +79,11 @@ while opcion != "0":
         n=int(input("ingrese numero: "))
         print(f"el fibonacci es {fibonacci(n)}")
 
+
+    elif opcion == "4":
+        palabra = input("ingrese la palabra: ")
+        letra = input("ingrese la letra: ")
+        print(f"\n La letra {letra}  aparcen en la palabra {palabra} la cantidad de {contadordeletras(palabra, letra)}")
 
     elif opcion == "5":
         texto=input("ingrese texto: ")
